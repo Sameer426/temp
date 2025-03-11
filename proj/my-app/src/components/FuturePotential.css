@@ -1,0 +1,82 @@
+/* Main Container */
+.future-potential-container {
+    font-family: 'Open Sans', sans-serif;
+    padding: 40px;
+    background-color: #ffffff; /* White background */
+    margin-top: -90px;
+}
+
+/* Main Heading */
+.main-heading {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #79c73d; /* Green color */
+}
+
+/* Vision Section - Smaller Box */
+.vision-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f0e1; /* Light beige background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: -15px;
+    height: 200px;
+}
+
+/* Vision Image Container */
+.vision-image-container {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Vision Image - Make it Pop */
+.vision-image {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    margin-left: -30px;
+    height: 230px;
+    margin-top: 0px;
+}
+
+/* Hover Effect - Slight Scale & Glow */
+.vision-image:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Vision Content - Left Aligned */
+.vision-content {
+    flex-basis: 55%;
+    text-align: left;
+}
+
+/* Vision Content Paragraphs */
+.vision-content p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .vision-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .vision-content {
+        text-align: center;
+    }
+}

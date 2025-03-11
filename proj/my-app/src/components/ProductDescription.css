@@ -1,0 +1,102 @@
+/* src/components/ProductDescription.css */
+.product-description-container {
+    font-family: 'Open Sans', sans-serif;
+    padding: 2px;
+    margin-top: -100px;
+    background-color: #f5f0e1;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    
+}
+
+/* Main Heading */
+.main-heading {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #79c73d;
+    margin-top: 4px;
+}
+
+/* Subheading */
+.subheading {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    color: #007BFF;
+}
+
+/* Layout for description */
+.description-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Image container */
+.image-container {
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Image styling */
+.description-image {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.description-image:hover {
+    transform: scale(1.05); /* Slight enlargement for pop-out effect */
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5); /* More intense shadow on hover */
+    border: 3px solid rgba(121, 199, 61, 0.6); /* Soft green glow effect */
+}
+
+/* Content container */
+.description-content {
+    flex-basis: 45%;
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* Subheading inside content */
+.description-content h3 {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: -50px;
+}
+
+/* Paragraph text */
+.description-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-left: -50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .description-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .description-content {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .description-image {
+        width: 90%;
+    }
+}

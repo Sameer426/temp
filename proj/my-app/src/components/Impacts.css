@@ -1,0 +1,81 @@
+/* src/components/Impacts.css */
+.impacts-wrapper {
+    font-family: 'Open Sans', sans-serif;
+    padding: 40px;
+    background-color: #ffffff;
+    margin-top: -75px; /* Adjust margin */
+}
+  
+.impacts-heading {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+  
+.impacts-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.impact-card {
+    flex-basis: calc(35% - 20px); /* Reduced block width */
+    background-color: #f5f0e1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 250px; /* Reduced height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ensures content stays aligned */
+}
+  
+.left-card, .right-card {
+    text-align: left;
+    height: 170px;
+}
+  
+.impchk1 {
+    margin-top: 0px;
+}
+  
+.impchk2 {
+    margin-top: -25px;
+}
+  
+.impact-card h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    min-height: 40px; /* Ensures heading stays at the same level */
+    display: flex;
+    align-items: center;
+}
+  
+.impact-card p {
+    font-size: 0.95em;
+}
+  
+/* Center Image Container */
+.impact-image-container {
+    flex-basis: calc(30% - 20px); /* Increased space for images */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.impact-image {
+    width: 200px; /* Increased image size */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Image Pop Effect on Hover */
+.impact-image:hover {
+    transform: scale(1.1); /* Slightly enlarges the image */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+}

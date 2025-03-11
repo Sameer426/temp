@@ -1,0 +1,32 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 100px; /* Offset for fixed header */
+}
+
+
+section {
+  margin: 40px 0;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+#team {
+  padding-left: 40px; /* Adjust this value as needed */
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset for fixed header */
+section {
+  scroll-margin-top: 100px; /* Adjust based on header height */
+}
